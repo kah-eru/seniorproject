@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [age, setAge] = useState<number | ''>('');
-  const [weight, setWeight] = useState<number | ''>('');
-  const [height, setHeight] = useState<number | ''>('');
   const [reps, setReps] = useState<number | ''>('');
   const [nextWeight, setNextWeight] = useState<number | null>(null);
   const [liftedWeight, setLiftedWeight] = useState<number | ''>('');
@@ -26,31 +23,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Bench Press Calculator</h1>
+      <h1>Next Set Calculator</h1>
       <form onSubmit={handleSubmit}>
-        <input
-          type="number"
-          placeholder="Age"
-          value={age}
-          onChange={(e) => setAge(Number(e.target.value))}
-        />
         <input
           type="number"
           placeholder="Weight Lifted (lb)"
           value={liftedWeight}
           onChange={(e) => setLiftedWeight(Number(e.target.value))}
-        />
-        <input
-          type="number"
-          placeholder="Weight (lb)"
-          value={weight}
-          onChange={(e) => setWeight(Number(e.target.value))}
-        />
-        <input
-          type="number"
-          placeholder="Height (cm)"
-          value={height}
-          onChange={(e) => setHeight(Number(e.target.value))}
         />
         <input
           type="number"
