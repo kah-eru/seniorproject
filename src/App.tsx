@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Next Set Calculator</h1>
+      <h1>Next Set</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="number"
