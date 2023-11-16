@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Desktop } from './Desktop';
+import Desktop from './Desktop';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
