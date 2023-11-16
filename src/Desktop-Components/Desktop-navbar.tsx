@@ -14,7 +14,11 @@ import * as React from 'react';
 const pages = ['Workouts', 'Progression'];
 const settings = ['Profile', 'Logout'];
 
-function NavBar() {
+interface NavBarProps {
+  onNavigateBack: () => void;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ onNavigateBack }) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
@@ -123,7 +127,7 @@ function NavBar() {
           onClose={handleCloseNavMenu}
         >
           {pages.map((page) => (
-            <MenuItem key={page} onClick={handleCloseNavMenu}>
+            <MenuItem key={page} onClick={() => onNavigateBack()}>
               <Typography textAlign="center">{page}</Typography>
             </MenuItem>
           ))}
@@ -131,6 +135,6 @@ function NavBar() {
       </Container>
     </AppBar>
   );
-}
+};
 
 export default NavBar;
