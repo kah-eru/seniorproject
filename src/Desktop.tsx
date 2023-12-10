@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Workout from "./Desktop-Components/Desktop-cards";
-import NavBar from "./Desktop-Components/Desktop-navbar";
-import WorkoutPlan from "./Desktop-Components/Desktop-workoutplans";
+import Workout from "./Components/Cards";
+import NavBar from "./Components/NavBar";
+import WorkoutPlan from "./Components/WorkoutPlans";
 import "./Desktop.css";
 
 const Desktop: React.FC = () => {

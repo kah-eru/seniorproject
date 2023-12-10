@@ -137,4 +137,4 @@ const NavBar: React.FC<NavBarProps> = ({ onNavigateBack }) => {
   );
 };
 
-export default NavBar;
+export default NavBar; 
