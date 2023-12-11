@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Desktop from './Desktop';
 import './index.css';
+import React from 'react';
+import Desktop from './Desktop';
 
 
 
