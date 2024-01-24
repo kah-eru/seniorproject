@@ -1,4 +1,4 @@
-// Desktop.tsx
+
 import React from 'react';
 import { Container } from '@mui/material';
 import NavBar from './Components/NavBar';
