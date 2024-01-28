@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Card.tsx
+=======
+// Workout.tsx
+>>>>>>> 21d7be62d554915787485641c4ea1187492767dd
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 import React from 'react';
 

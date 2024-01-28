@@ -13,7 +13,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
+<<<<<<< HEAD
     "react-scripts": "^3.0.1",
+=======
+    "react-scripts": "^5.0.1",
+>>>>>>> 21d7be62d554915787485641c4ea1187492767dd
     "sqlite3": "^5.1.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",

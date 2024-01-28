@@ -1,14 +1,22 @@
 // WorkoutPlan.tsx
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Typography, Button, Box } from '@mui/material';
 
 interface Exercise {
+=======
+import { Button, Container, Typography } from '@mui/material';
+import React from 'react';
+
+interface Workout {
+>>>>>>> 21d7be62d554915787485641c4ea1187492767dd
   name: string;
   reps: number;
   sets: number;
 }
 
+<<<<<<< HEAD
 interface WorkoutPlanData {
   id: string;
   title: string;
@@ -60,6 +68,34 @@ const WorkoutPlan: React.FC = () => {
         ))}
       </Box>
       {/* Add the rest of your workout plan rendering logic */}
+=======
+interface WorkoutPlanProps {
+  workouts: Workout[];
+  onStartWorkout: (workoutName: string) => void;
+}
+
+const WorkoutPlan: React.FC<WorkoutPlanProps> = ({ workouts, onStartWorkout }) => {
+  return (
+    <Container maxWidth="md" sx={{ textAlign: 'center', mt: 3 }}>
+      {workouts.map((workout) => (
+        <div key={workout.name} style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+          <Typography variant="body1" color="white">
+            {workout.name}
+          </Typography>
+          <Typography variant="body1" color="white">
+            {`${workout.reps} reps / ${workout.sets} sets`}
+          </Typography>
+          <Button
+            variant="contained"
+            size="large"
+            style={{ backgroundColor: 'blue' }}
+            onClick={() => onStartWorkout(workout.name)}
+          >
+            Start Workout
+          </Button>
+        </div>
+      ))}
+>>>>>>> 21d7be62d554915787485641c4ea1187492767dd
     </Container>
   );
 };

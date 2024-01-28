@@ -15,10 +15,17 @@ const pages = ['Workouts', 'Progression'];
 const settings = ['Profile', 'Logout'];
 
 interface NavBarProps {
+<<<<<<< HEAD
   onNavigateBack?: () => void;
 }
 
 const NavBar: React.FC<NavBarProps> = ({ onNavigateBack = () => {} }) => {
+=======
+  onNavigateBack: () => void;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ onNavigateBack }) => {
+>>>>>>> 21d7be62d554915787485641c4ea1187492767dd
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
